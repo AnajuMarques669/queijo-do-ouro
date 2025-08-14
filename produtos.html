@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Produtos - Queijo D´Ouro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="nav-inner">
+      <div class="logo">🧀 <span>Queijo D´Ouro</span></div>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="sobre.html" class="nav-link">Sobre Nós</a>
+        <a href="receitas.html" class="nav-link">Receitas</a>
+        <a href="produtos.html" class="nav-link active">Produtos</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+      </nav>
+    </div>
+  </header>
+ 
+  <div class="cart-icon" onclick="toggleCart()" title="Abrir carrinho">🛒 <span id="cart-count">0</span></div>
+ 
+  <aside id="cart" class="cart">
+    <button class="close-cart" onclick="toggleCart()">✕</button>
+    <h2>Seu Carrinho</h2>
+    <ul id="cart-items" class="cart-items"></ul>
+    <div class="cart-footer">
+      <div>Total: <strong id="cart-total">R$ 0,00</strong></div>
+      <div class="cart-actions">
+        <button class="btn checkout" onclick="checkout()">Finalizar Compra</button>
+      </div>
+    </div>
+  </aside>
+ 
+  <section class="page-header">
+    <div class="container">
+      <h1>Nossos Produtos</h1>
+      <p>Seleção artesanal, pronta para sua mesa.</p>
+    </div>
+  </section>
+ 
+  <section class="section container produtos">
+    <!-- cada produto: alterar img, nome, descrição e preço -->
+    <article class="produto-card">
+      <img src="img/queijojulieta.jpg" alt="Queijo Romeu e Julieta">
+      <h3>Queijo Romeu e Julieta</h3>
+      <p>Queijo Romeu e Julieta Queijo D’Oro
+A combinação perfeita entre o doce e o salgado! Nosso Romeu e Julieta une a cremosidade suave do queijo com a doçura marcante da goiabada, criando uma explosão de sabor a cada mordida. É a escolha ideal para quem ama tradição com um toque de carinho em cada fatia. Perfeito para sobremesas, lanches ou momentos especiais.</p>
+      <div class="produto-bottom">
+        <span class="preco">R$ 18,99</span>
+        <button class="btn add" onclick="addToCart('Queijo Brie Artesanal', 35.00)">Adicionar</button>
+      </div>
+    </article>
+ 
+    <article class="produto-card">
+      <img src="img/queijocoalho.jpeg" alt="Queijo Branco">
+      <h3>Queijo Branco</h3>
+      <p>
+Queijo Branco Queijo D’Oro
+Tradicional, firme e saboroso, nosso queijo branco é feito com leite de qualidade e um toque artesanal que garante o sabor autêntico do interior. Perfeito para grelhar, assar ou saborear puro, ele tem textura consistente, pouco sal e aroma suave. Ideal para churrascos, cafés da manhã ou qualquer momento que pede um sabor inesquecível.</p>
+      <div class="produto-bottom">
+        <span class="preco">R$ 42,90</span>
+        <button class="btn add" onclick="addToCart('Queijo Gouda Curado', 42.90)">Adicionar</button>
+      </div>
+    </article>
+ 
+    <article class="produto-card">
+      <img src="img/requeijao.jpg" alt="Requeijão">
+      <h3>Requeijão</h3>
+      <p>
+Requeijão Queijo D’Oro
+Cremoso, leve e cheio de sabor, o requeijão Queijo D’Oro é feito artesanalmente com ingredientes frescos e selecionados. Ideal para passar no pão, usar em receitas ou saborear puro, ele derrete na boca e conquista pelo sabor suave e textura aveludada. Um verdadeiro carinho em forma de queijo!</p>
+      <div class="produto-bottom">
+        <span class="preco">R$ 49,90</span>
+        <button class="btn add" onclick="addToCart('Queijo Azul Premium', 49.90)">Adicionar</button>
+      </div>
+    </article>
+ 
+  </section>
+ 
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Queijo D´Ouro • Todos os direitos reservados</p>
+    </div>
+  </footer>
+ 
+  <script src="js/script.js"></script>
+</body>
+</html>

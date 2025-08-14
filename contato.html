@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contato - Queijo D´Ouro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="nav-inner">
+      <div class="logo">🧀 <span>Queijo D´Ouro</span></div>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="sobre.html" class="nav-link">Sobre Nós</a>
+        <a href="receitas.html" class="nav-link">Receitas</a>
+        <a href="produtos.html" class="nav-link">Produtos</a>
+        <a href="contato.html" class="nav-link active">Contato</a>
+      </nav>
+    </div>
+  </header>
+ 
+  <div class="cart-icon" onclick="toggleCart()" title="Abrir carrinho">🛒 <span id="cart-count">0</span></div>
+  <aside id="cart" class="cart">
+    <button class="close-cart" onclick="toggleCart()">✕</button>
+    <h2>Seu Carrinho</h2>
+    <ul id="cart-items" class="cart-items"></ul>
+    <div class="cart-footer">
+      <div>Total: <strong id="cart-total">R$ 0,00</strong></div>
+      <div class="cart-actions">
+        <button class="btn checkout" onclick="checkout()">Finalizar Compra</button>
+      </div>
+    </div>
+  </aside>
+ 
+  <section class="page-header">
+    <div class="container">
+      <h1>Fale Conosco</h1>
+      <p>Envie sua sugestão, pedido ou dúvida — responderemos em breve.</p>
+    </div>
+  </section>
+ 
+  <section class="section container formulario">
+    <form id="contactForm">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+      <p id="msgRetorno" class="msg-retorno"></p>
+    </form>
+  </section>
+ 
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Queijo D´Ouro • Todos os direitos reservados</p>
+    </div>
+  </footer>
+ 
+  <script src="js/script.js"></script>
+</body>
+</html>
+ 

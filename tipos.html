@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tipos - Queijo D´Ouro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="nav-inner">
+      <div class="logo">🧀 <span>Queijo D´Ouro</span></div>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="sobre.html" class="nav-link">Sobre Nós</a>
+        <a href="tipos.html" class="nav-link active">Tipos</a>
+        <a href="receitas.html" class="nav-link">Receitas</a>
+        <a href="produtos.html" class="nav-link">Produtos</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+      </nav>
+    </div>
+  </header>
+ 
+  <div class="cart-icon" onclick="toggleCart()" title="Abrir carrinho">🛒 <span id="cart-count">0</span></div>
+  <aside id="cart" class="cart">
+    <button class="close-cart" onclick="toggleCart()">✕</button>
+    <h2>Seu Carrinho</h2>
+    <ul id="cart-items" class="cart-items"></ul>
+    <div class="cart-footer">
+      <div>Total: <strong id="cart-total">R$ 0,00</strong></div>
+      <div class="cart-actions">
+        <button class="btn checkout" onclick="checkout()">Finalizar Compra</button>
+      </div>
+    </div>
+  </aside>
+ 
+  <section class="page-header">
+    <div class="container">
+      <h1>Tipos de Queijo</h1>
+      <p>Conheça algumas variedades e suas características.</p>
+    </div>
+  </section>
+ 
+  <section class="section container grid">
+    <article class="card">
+      <img src="img/brie.jpg" alt="Brie">
+      <h3>Brie</h3>
+      <p>Cremoso e delicado — perfeito com geleias e pães finos.</p>
+    </article>
+ 
+    <article class="card">
+      <img src="img/gorgonzola.jpg" alt="Gorgonzola">
+      <h3>Gorgonzola</h3>
+      <p>Azul de sabor intenso — ideal em molhos e tábuas.</p>
+    </article>
+ 
+    <article class="card">
+      <img src="img/parmesao.jpg" alt="Parmesão">
+      <h3>Parmesão</h3>
+      <p>Curado e marcante — finaliza pratos com brilho.</p>
+    </article>
+ 
+    <article class="card">
+      <img src="img/cheddar.jpg" alt="Cheddar">
+      <h3>Cheddar</h3>
+      <p>Versátil, presente em sanduíches e preparos cheios de sabor.</p>
+    </article>
+  </section>
+ 
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Queijo D´Ouro • Todos os direitos reservados</p>
+    </div>
+  </footer>
+ 
+  <script src="js/script.js"></script>
+</body>
+</html>

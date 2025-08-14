@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Receitas -Queijo D´Ouro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="nav-inner">
+      <div class="logo">🧀 <span>Queijo D´Ouro</span></div>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="sobre.html" class="nav-link">Sobre Nós</a>
+        <a href="receitas.html" class="nav-link active">Receitas</a>
+        <a href="produtos.html" class="nav-link">Produtos</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+      </nav>
+    </div>
+  </header>
+ 
+  <div class="cart-icon" onclick="toggleCart()" title="Abrir carrinho">🛒 <span id="cart-count">0</span></div>
+  <aside id="cart" class="cart">
+    <button class="close-cart" onclick="toggleCart()">✕</button>
+    <h2>Seu Carrinho</h2>
+    <ul id="cart-items" class="cart-items"></ul>
+    <div class="cart-footer">
+      <div>Total: <strong id="cart-total">R$ 0,00</strong></div>
+      <div class="cart-actions">
+        <button class="btn checkout" onclick="checkout()">Finalizar Compra</button>
+      </div>
+    </div>
+  </aside>
+ 
+  <section class="page-header">
+    <div class="container">
+      <h1>Receitas com Queijo</h1>
+      <p>Inspirações deliciosas para você preparar em casa.</p>
+    </div>
+  </section>
+ 
+  <section class="section container galeria">
+    <article class="receita">
+      <img src="img/paodegoiabada.jpg" alt="Pão de Queijo com Goiabada">
+      <h3>Pão de queijo com Goiabada</h3>
+      <p>O pão de queijo é uma delícia mineira, então nada mais justo do que incrementar com goiabada. A receita da massa tem bastante queijo e o segredo é abrir as bolinhas e colocar um cubo de goiabada e outro de queijo antes de fechar.</p>
+    </article>
+ 
+    <article class="receita">
+      <img src="img/queijobranco.jpeg" alt="Queijo Branco Caseiro">
+      <h3>Queijo branco caseiro</h3>
+      <p>Clássico e prático de fazer, rico em proteínas uma delicia para completar seus lanches.</p>
+    </article>
+ 
+    <article class="receita">
+      <img src="img/quente.jpg" alt="Misto com Rqueijão">
+      <h3>Queijo quente com requeijão</h3>
+      <p>Cremoso em todos os sentidos possíveis, esse queijo quente com requeijão é a escolha perfeita para complementar o seu café da manhã.</p>
+    </article>
+  </section>
+ 
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Queijo D´Ouro • Todos os direitos reservados</p>
+    </div>
+  </footer>
+ 
+  <script src="js/script.js"></script>
+</body>
+</html>
+ 

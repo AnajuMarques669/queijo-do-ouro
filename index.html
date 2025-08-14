@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Queijo D´Ouro — Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="nav-inner">
+      <div class="logo">🧀 <span>Queijo D´Ouro</span></div>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link active">Início</a>
+        <a href="sobre.html" class="nav-link">Sobre Nós</a>
+        <a href="receitas.html" class="nav-link">Receitas</a>
+        <a href="produtos.html" class="nav-link">Produtos</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+      </nav>
+    </div>
+  </header>
+ 
+  <!-- cart icon + panel (present in all pages) -->
+  <div class="cart-icon" onclick="toggleCart()" title="Abrir carrinho">
+    🛒 <span id="cart-count">0</span>
+  </div>
+ 
+  <aside id="cart" class="cart">
+    <button class="close-cart" onclick="toggleCart()">✕</button>
+    <h2>Seu Carrinho</h2>
+    <ul id="cart-items" class="cart-items"></ul>
+    <div class="cart-footer">
+      <div>Total: <strong id="cart-total">R$ 0,00</strong></div>
+      <div class="cart-actions">
+        <button class="btn checkout" onclick="checkout()">Finalizar Compra</button>
+      </div>
+    </div>
+  </aside>
+ 
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Descubra o Sabor dos Melhores Queijos</h1>
+      <p>Uma viagem gourmet por texturas, aromas e tradições.</p>
+      <a href="produtos.html" class="btn-primary">Ver Produtos</a>
+    </div>
+   </section>
+   
+   
+     <div class="container">
+   <h2>Bem-vindo ao Queijo D´Ouro </h2>
+   <p>O projeto Queijo D' oro produzido por alunos do segundo ano do cursode agropecuária, do Instituto Federal de Educação, Ciência e Tecnologia Baiano-Campus Itaberaba , tem como objetivo facilitar o acesso a informações sobre e a produtos do Queijo D' oro, de forma simples e fácil, . Isso é efeituado atravès de um sistema web pensado para de revenda dos nossos produtos.</p>
+ </div>
+
+
+   
+   
+  <!-- Destaques -->
+  <section class="section container">
+    <h2>Por que amar queijo?</h2>
+    <div class="grid cards">
+      <article class="card">
+        <img src="img/queijo-inicio.jpg" alt="Branco">
+        <h3>Sabor Único</h3>
+        <p>Texturas que atravessam gerações — do suave ao marcante.</p>
+      </article>
+ 
+      <article class="card">
+        <img src="img/queijo-goiabada.jpeg" alt="Queijo com goiabada">
+        <h3>Variedade</h3>
+        <p>Mais de 1000 formas e receitas de como fazer e comer seus queijos</p>
+      </article>
+ 
+      <article class="card">
+        <img src="img/requeijao-inicio" alt="Requeijão">
+        <h3>Tradição</h3>
+        <p>Produtores locais, técnicas artesanais e histórias por trás do sabor.</p>
+      </article>
+    </div>
+  </section>
+ 
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Queijo D´Ouro • Todos os direitos reservados</p>
+    </div>
+  </footer>
+ 
+  <script src="js/script.js"></script>
+</body>
+</html>
